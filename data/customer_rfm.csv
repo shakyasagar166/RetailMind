@@ -1,0 +1,601 @@
+customer_id,recency_days,frequency,monetary_spend,segment_label
+1001,37,17,1169.25,Loyal Customers
+1002,22,26,4613.0,Champions / VIP
+1003,56,19,1797.06,Loyal Customers
+1004,27,21,2007.12,Loyal Customers
+1005,199,2,147.93,At Risk / Inactive
+1006,329,3,386.88,At Risk / Inactive
+1007,91,4,748.45,Potential Loyalists
+1008,15,45,4389.53,Champions / VIP
+1009,85,6,1095.76,Potential Loyalists
+1010,150,2,285.6,At Risk / Inactive
+1011,164,1,290.63,At Risk / Inactive
+1012,102,11,755.63,Potential Loyalists
+1013,32,10,1277.41,Loyal Customers
+1014,329,2,386.58,At Risk / Inactive
+1015,54,15,1863.41,Loyal Customers
+1016,1,31,3637.86,Champions / VIP
+1017,70,10,830.6,Potential Loyalists
+1018,17,34,4067.95,Champions / VIP
+1019,225,1,423.42,At Risk / Inactive
+1020,344,1,145.72,At Risk / Inactive
+1021,300,1,209.8,At Risk / Inactive
+1022,10,39,4100.39,Champions / VIP
+1023,283,3,390.1,At Risk / Inactive
+1024,282,2,149.51,At Risk / Inactive
+1025,300,2,378.22,At Risk / Inactive
+1026,20,13,1347.11,Loyal Customers
+1027,244,3,217.27,At Risk / Inactive
+1028,18,27,2721.8,Champions / VIP
+1029,12,40,2498.3,Champions / VIP
+1030,17,47,2415.52,Champions / VIP
+1031,23,17,1795.26,Loyal Customers
+1032,32,10,1606.71,Loyal Customers
+1033,54,18,2075.95,Loyal Customers
+1034,85,9,942.18,Potential Loyalists
+1035,25,22,1755.49,Loyal Customers
+1036,54,6,934.36,Potential Loyalists
+1037,330,1,216.99,At Risk / Inactive
+1038,19,14,2339.07,Loyal Customers
+1039,153,1,389.14,At Risk / Inactive
+1040,39,12,454.77,Potential Loyalists
+1041,3,24,2635.54,Champions / VIP
+1042,18,43,3398.74,Champions / VIP
+1043,64,6,852.57,Potential Loyalists
+1044,9,20,2773.34,Champions / VIP
+1045,58,20,1198.24,Loyal Customers
+1046,272,4,200.83,At Risk / Inactive
+1047,55,25,2358.17,Loyal Customers
+1048,23,46,4969.85,Champions / VIP
+1049,338,3,347.31,At Risk / Inactive
+1050,23,21,2880.92,Champions / VIP
+1051,91,4,880.52,Potential Loyalists
+1052,34,12,2043.13,Loyal Customers
+1053,25,21,1963.68,Loyal Customers
+1054,18,44,2734.42,Champions / VIP
+1055,48,16,1171.83,Loyal Customers
+1056,98,11,924.84,Potential Loyalists
+1057,35,12,2118.78,Loyal Customers
+1058,35,4,870.76,Potential Loyalists
+1059,9,43,4489.17,Champions / VIP
+1060,157,2,193.06,At Risk / Inactive
+1061,288,3,120.78,At Risk / Inactive
+1062,341,2,382.35,At Risk / Inactive
+1063,19,14,1668.45,Loyal Customers
+1064,85,4,736.01,Potential Loyalists
+1065,32,6,557.53,Potential Loyalists
+1066,5,31,3235.75,Champions / VIP
+1067,15,43,2379.46,Champions / VIP
+1068,20,38,4273.53,Champions / VIP
+1069,1,26,3094.36,Champions / VIP
+1070,266,4,122.19,At Risk / Inactive
+1071,59,15,1501.67,Loyal Customers
+1072,56,10,1371.98,Loyal Customers
+1073,110,10,405.7,Potential Loyalists
+1074,348,4,318.15,At Risk / Inactive
+1075,49,21,1152.71,Loyal Customers
+1076,24,21,2073.36,Loyal Customers
+1077,83,10,561.31,Potential Loyalists
+1078,24,42,5455.85,Champions / VIP
+1079,242,1,316.93,At Risk / Inactive
+1080,57,13,1174.49,Loyal Customers
+1081,19,47,5451.32,Champions / VIP
+1082,99,12,456.6,Potential Loyalists
+1083,43,19,1608.87,Loyal Customers
+1084,14,34,2780.66,Champions / VIP
+1085,3,46,4673.9,Champions / VIP
+1086,24,21,1262.13,Loyal Customers
+1087,183,1,233.62,At Risk / Inactive
+1088,22,20,4096.39,Champions / VIP
+1089,50,17,2064.93,Loyal Customers
+1090,38,23,1075.24,Loyal Customers
+1091,2,34,3664.66,Champions / VIP
+1092,27,13,1383.79,Loyal Customers
+1093,18,25,1097.76,Loyal Customers
+1094,66,12,470.67,Potential Loyalists
+1095,18,25,2007.71,Loyal Customers
+1096,363,2,271.5,At Risk / Inactive
+1097,35,18,1325.11,Loyal Customers
+1098,191,4,67.31,At Risk / Inactive
+1099,8,31,3794.98,Champions / VIP
+1100,67,6,529.11,Potential Loyalists
+1101,37,16,1251.68,Loyal Customers
+1102,102,9,917.77,Potential Loyalists
+1103,24,32,4142.99,Champions / VIP
+1104,18,20,4808.92,Champions / VIP
+1105,91,9,848.18,Potential Loyalists
+1106,53,8,982.88,Potential Loyalists
+1107,28,23,1208.83,Loyal Customers
+1108,20,22,1644.82,Loyal Customers
+1109,9,29,2647.71,Champions / VIP
+1110,64,12,481.62,Potential Loyalists
+1111,58,24,1533.22,Loyal Customers
+1112,94,11,550.92,Potential Loyalists
+1113,263,4,59.58,At Risk / Inactive
+1114,35,10,1134.05,Loyal Customers
+1115,10,28,3814.38,Champions / VIP
+1116,28,21,2073.2,Loyal Customers
+1117,30,5,746.75,Potential Loyalists
+1118,203,2,44.09,At Risk / Inactive
+1119,173,4,67.45,At Risk / Inactive
+1120,26,11,2341.71,Loyal Customers
+1121,11,29,5164.5,Champions / VIP
+1122,6,39,5001.97,Champions / VIP
+1123,189,1,192.48,At Risk / Inactive
+1124,56,20,1623.92,Loyal Customers
+1125,30,18,1670.51,Loyal Customers
+1126,277,3,120.32,At Risk / Inactive
+1127,23,38,2456.77,Champions / VIP
+1128,46,13,1892.75,Loyal Customers
+1129,25,14,1615.87,Loyal Customers
+1130,97,4,773.31,Potential Loyalists
+1131,102,5,1066.52,Potential Loyalists
+1132,45,22,1318.49,Loyal Customers
+1133,25,30,2279.53,Champions / VIP
+1134,59,4,416.45,Potential Loyalists
+1135,70,4,443.1,Potential Loyalists
+1136,50,15,1854.85,Loyal Customers
+1137,1,37,3151.05,Champions / VIP
+1138,19,12,1263.91,Loyal Customers
+1139,25,30,3547.73,Champions / VIP
+1140,70,6,465.73,Potential Loyalists
+1141,17,22,1283.37,Loyal Customers
+1142,24,21,4494.4,Champions / VIP
+1143,21,48,2611.09,Champions / VIP
+1144,43,7,717.88,Potential Loyalists
+1145,16,15,1989.12,Loyal Customers
+1146,7,44,4760.25,Champions / VIP
+1147,166,3,375.13,At Risk / Inactive
+1148,81,10,566.22,Potential Loyalists
+1149,10,40,3920.51,Champions / VIP
+1150,68,7,533.14,Potential Loyalists
+1151,27,10,1470.6,Loyal Customers
+1152,24,31,5421.53,Champions / VIP
+1153,30,21,2373.54,Loyal Customers
+1154,13,31,4646.47,Champions / VIP
+1155,205,1,349.78,At Risk / Inactive
+1156,94,4,999.89,Potential Loyalists
+1157,42,18,1615.77,Loyal Customers
+1158,47,18,1479.05,Loyal Customers
+1159,48,15,1927.27,Loyal Customers
+1160,200,3,432.57,At Risk / Inactive
+1161,55,6,835.34,Potential Loyalists
+1162,12,24,5222.5,Champions / VIP
+1163,38,12,2195.77,Loyal Customers
+1164,24,37,3832.81,Champions / VIP
+1165,20,17,1764.07,Loyal Customers
+1166,23,39,3055.18,Champions / VIP
+1167,344,1,204.33,At Risk / Inactive
+1168,50,17,1776.5,Loyal Customers
+1169,77,8,627.58,Potential Loyalists
+1170,20,44,4775.6,Champions / VIP
+1171,1,31,4641.22,Champions / VIP
+1172,27,23,1865.25,Loyal Customers
+1173,268,2,368.99,At Risk / Inactive
+1174,203,4,156.28,At Risk / Inactive
+1175,60,23,1540.83,Loyal Customers
+1176,43,12,685.93,Potential Loyalists
+1177,346,1,177.76,At Risk / Inactive
+1178,32,6,405.11,Potential Loyalists
+1179,49,19,1452.21,Loyal Customers
+1180,54,12,1703.61,Loyal Customers
+1181,31,19,1524.86,Loyal Customers
+1182,10,40,2674.13,Champions / VIP
+1183,44,12,1853.31,Loyal Customers
+1184,42,8,1077.53,Potential Loyalists
+1185,29,12,1326.88,Loyal Customers
+1186,270,2,74.33,At Risk / Inactive
+1187,51,12,833.78,Potential Loyalists
+1188,54,6,718.81,Potential Loyalists
+1189,127,1,232.58,At Risk / Inactive
+1190,38,20,2223.32,Loyal Customers
+1191,30,17,1758.34,Loyal Customers
+1192,53,21,2238.49,Loyal Customers
+1193,39,23,1528.72,Loyal Customers
+1194,45,11,1521.07,Loyal Customers
+1195,99,8,731.44,Potential Loyalists
+1196,18,24,5161.05,Champions / VIP
+1197,63,4,453.96,Potential Loyalists
+1198,38,15,1236.69,Loyal Customers
+1199,157,3,150.18,At Risk / Inactive
+1200,74,8,576.72,Potential Loyalists
+1201,74,6,494.42,Potential Loyalists
+1202,24,39,4894.31,Champions / VIP
+1203,47,24,1736.56,Loyal Customers
+1204,23,14,1058.73,Loyal Customers
+1205,16,33,3617.81,Champions / VIP
+1206,74,5,993.65,Potential Loyalists
+1207,55,12,675.39,Potential Loyalists
+1208,46,4,468.58,Potential Loyalists
+1209,27,12,1154.38,Loyal Customers
+1210,54,11,568.39,Potential Loyalists
+1211,87,8,659.52,Potential Loyalists
+1212,18,29,4274.19,Champions / VIP
+1213,52,24,1447.58,Loyal Customers
+1214,17,36,5010.05,Champions / VIP
+1215,51,16,1472.15,Loyal Customers
+1216,9,28,5042.16,Champions / VIP
+1217,109,7,1018.33,Potential Loyalists
+1218,255,1,311.17,At Risk / Inactive
+1219,109,12,919.69,Potential Loyalists
+1220,1,37,4933.03,Champions / VIP
+1221,1,40,4933.42,Champions / VIP
+1222,1,28,2432.16,Champions / VIP
+1223,11,34,2244.12,Champions / VIP
+1224,94,10,736.03,Potential Loyalists
+1225,8,31,4678.96,Champions / VIP
+1226,85,6,828.45,Potential Loyalists
+1227,125,2,206.37,At Risk / Inactive
+1228,20,42,5398.66,Champions / VIP
+1229,19,43,3694.5,Champions / VIP
+1230,2,43,5491.31,Champions / VIP
+1231,343,3,254.7,At Risk / Inactive
+1232,26,11,1098.86,Loyal Customers
+1233,22,39,5365.96,Champions / VIP
+1234,9,45,2295.41,Champions / VIP
+1235,190,3,208.88,At Risk / Inactive
+1236,17,24,3180.68,Champions / VIP
+1237,26,20,1566.11,Loyal Customers
+1238,72,6,1054.66,Potential Loyalists
+1239,33,24,2084.93,Loyal Customers
+1240,35,16,2176.78,Loyal Customers
+1241,11,24,4063.78,Champions / VIP
+1242,41,7,582.7,Potential Loyalists
+1243,16,25,4061.67,Champions / VIP
+1244,89,8,473.87,Potential Loyalists
+1245,41,4,878.23,Potential Loyalists
+1246,10,32,5456.85,Champions / VIP
+1247,12,39,4740.04,Champions / VIP
+1248,18,42,3688.57,Champions / VIP
+1249,94,9,858.91,Potential Loyalists
+1250,42,8,938.41,Potential Loyalists
+1251,362,1,85.17,At Risk / Inactive
+1252,31,18,2133.42,Loyal Customers
+1253,51,24,1841.28,Loyal Customers
+1254,37,13,1584.59,Loyal Customers
+1255,49,16,1983.51,Loyal Customers
+1256,109,10,464.67,Potential Loyalists
+1257,66,10,665.82,Potential Loyalists
+1258,26,15,1452.38,Loyal Customers
+1259,259,1,420.98,At Risk / Inactive
+1260,22,24,1353.64,Loyal Customers
+1261,49,19,1029.96,Loyal Customers
+1262,171,1,443.75,At Risk / Inactive
+1263,55,14,2339.53,Loyal Customers
+1264,262,3,297.01,At Risk / Inactive
+1265,7,46,3962.69,Champions / VIP
+1266,22,45,4903.41,Champions / VIP
+1267,12,21,3066.33,Champions / VIP
+1268,25,25,4544.19,Champions / VIP
+1269,49,14,1279.72,Loyal Customers
+1270,4,42,3058.46,Champions / VIP
+1271,40,24,1850.89,Loyal Customers
+1272,16,47,5352.24,Champions / VIP
+1273,225,2,94.51,At Risk / Inactive
+1274,25,23,4270.11,Champions / VIP
+1275,3,48,4237.31,Champions / VIP
+1276,57,5,938.11,Potential Loyalists
+1277,90,7,849.36,Potential Loyalists
+1278,41,25,2304.65,Loyal Customers
+1279,83,8,950.9,Potential Loyalists
+1280,98,4,412.64,Potential Loyalists
+1281,8,39,4439.58,Champions / VIP
+1282,78,9,582.07,Potential Loyalists
+1283,36,17,1594.96,Loyal Customers
+1284,87,5,836.97,Potential Loyalists
+1285,76,12,784.2,Potential Loyalists
+1286,20,16,2077.52,Loyal Customers
+1287,32,11,428.95,Potential Loyalists
+1288,3,24,3836.73,Champions / VIP
+1289,23,23,1202.95,Loyal Customers
+1290,362,4,417.02,At Risk / Inactive
+1291,19,38,3523.31,Champions / VIP
+1292,16,24,1685.5,Loyal Customers
+1293,46,10,1868.95,Loyal Customers
+1294,36,18,1987.82,Loyal Customers
+1295,224,2,329.23,At Risk / Inactive
+1296,27,21,1608.96,Loyal Customers
+1297,13,47,3993.62,Champions / VIP
+1298,28,24,1211.67,Loyal Customers
+1299,40,20,1752.52,Loyal Customers
+1300,35,12,844.89,Potential Loyalists
+1301,62,4,564.44,Potential Loyalists
+1302,60,25,1963.29,Loyal Customers
+1303,208,3,448.75,At Risk / Inactive
+1304,55,11,1046.03,Potential Loyalists
+1305,18,10,1298.87,Loyal Customers
+1306,98,5,810.64,Potential Loyalists
+1307,12,40,3643.98,Champions / VIP
+1308,46,8,786.77,Potential Loyalists
+1309,8,46,4827.34,Champions / VIP
+1310,25,18,1927.22,Loyal Customers
+1311,6,33,4104.66,Champions / VIP
+1312,51,8,1001.88,Potential Loyalists
+1313,210,3,434.03,At Risk / Inactive
+1314,158,4,218.42,At Risk / Inactive
+1315,327,1,328.31,At Risk / Inactive
+1316,17,12,1376.76,Loyal Customers
+1317,77,5,537.56,Potential Loyalists
+1318,248,4,189.06,At Risk / Inactive
+1319,59,9,1062.31,Potential Loyalists
+1320,3,34,4220.49,Champions / VIP
+1321,15,13,1783.01,Loyal Customers
+1322,255,1,173.2,At Risk / Inactive
+1323,317,3,174.32,At Risk / Inactive
+1324,84,11,787.16,Potential Loyalists
+1325,199,1,79.45,At Risk / Inactive
+1326,76,8,463.23,Potential Loyalists
+1327,80,8,427.72,Potential Loyalists
+1328,152,4,329.74,At Risk / Inactive
+1329,53,18,2258.14,Loyal Customers
+1330,59,18,2234.14,Loyal Customers
+1331,177,1,63.8,At Risk / Inactive
+1332,358,2,315.89,At Risk / Inactive
+1333,320,2,386.02,At Risk / Inactive
+1334,57,21,2238.27,Loyal Customers
+1335,335,2,416.21,At Risk / Inactive
+1336,47,13,2014.34,Loyal Customers
+1337,37,7,824.44,Potential Loyalists
+1338,76,11,792.59,Potential Loyalists
+1339,365,1,438.56,At Risk / Inactive
+1340,220,2,420.45,At Risk / Inactive
+1341,89,12,1060.07,Potential Loyalists
+1342,21,47,5401.39,Champions / VIP
+1343,41,18,1991.2,Loyal Customers
+1344,12,43,4159.32,Champions / VIP
+1345,40,9,431.54,Potential Loyalists
+1346,8,48,4189.64,Champions / VIP
+1347,72,9,637.39,Potential Loyalists
+1348,133,3,229.74,At Risk / Inactive
+1349,17,28,2366.29,Champions / VIP
+1350,9,26,4014.89,Champions / VIP
+1351,24,27,5459.85,Champions / VIP
+1352,53,20,2216.21,Loyal Customers
+1353,60,13,1718.05,Loyal Customers
+1354,141,4,94.37,At Risk / Inactive
+1355,27,12,1970.5,Loyal Customers
+1356,291,2,154.53,At Risk / Inactive
+1357,19,21,1541.68,Loyal Customers
+1358,100,6,940.18,Potential Loyalists
+1359,339,1,422.61,At Risk / Inactive
+1360,46,15,1136.13,Loyal Customers
+1361,35,15,1084.36,Loyal Customers
+1362,53,12,2098.98,Loyal Customers
+1363,15,36,4313.1,Champions / VIP
+1364,39,10,1553.57,Loyal Customers
+1365,37,12,436.17,Potential Loyalists
+1366,79,7,700.57,Potential Loyalists
+1367,41,9,964.05,Potential Loyalists
+1368,48,21,1899.46,Loyal Customers
+1369,9,45,3797.81,Champions / VIP
+1370,52,15,1197.96,Loyal Customers
+1371,51,8,694.75,Potential Loyalists
+1372,20,12,1295.76,Loyal Customers
+1373,53,12,651.94,Potential Loyalists
+1374,55,5,945.75,Potential Loyalists
+1375,33,8,427.43,Potential Loyalists
+1376,21,15,1450.88,Loyal Customers
+1377,55,10,2220.25,Loyal Customers
+1378,6,46,2901.18,Champions / VIP
+1379,55,25,1489.48,Loyal Customers
+1380,1,27,3057.74,Champions / VIP
+1381,76,5,929.14,Potential Loyalists
+1382,7,40,3379.74,Champions / VIP
+1383,18,17,1296.78,Loyal Customers
+1384,13,35,3091.98,Champions / VIP
+1385,61,9,862.52,Potential Loyalists
+1386,218,4,89.39,At Risk / Inactive
+1387,158,3,289.25,At Risk / Inactive
+1388,47,21,2035.18,Loyal Customers
+1389,49,18,1446.58,Loyal Customers
+1390,3,42,2232.51,Champions / VIP
+1391,100,7,667.7,Potential Loyalists
+1392,12,44,3638.98,Champions / VIP
+1393,34,24,1487.2,Loyal Customers
+1394,297,1,277.88,At Risk / Inactive
+1395,13,44,3079.74,Champions / VIP
+1396,65,7,883.8,Potential Loyalists
+1397,32,11,947.13,Potential Loyalists
+1398,154,2,233.07,At Risk / Inactive
+1399,17,33,3723.23,Champions / VIP
+1400,98,11,894.96,Potential Loyalists
+1401,21,23,2062.78,Loyal Customers
+1402,29,16,1563.46,Loyal Customers
+1403,54,22,1691.73,Loyal Customers
+1404,16,12,1007.06,Loyal Customers
+1405,20,30,5339.74,Champions / VIP
+1406,43,10,1948.78,Loyal Customers
+1407,188,4,429.26,At Risk / Inactive
+1408,8,28,2386.78,Champions / VIP
+1409,58,25,1540.41,Loyal Customers
+1410,90,12,988.5,Potential Loyalists
+1411,96,11,995.11,Potential Loyalists
+1412,27,24,1221.75,Loyal Customers
+1413,200,1,431.6,At Risk / Inactive
+1414,55,23,1702.71,Loyal Customers
+1415,287,2,132.53,At Risk / Inactive
+1416,91,8,775.7,Potential Loyalists
+1417,6,21,4897.86,Champions / VIP
+1418,23,11,1005.49,Loyal Customers
+1419,35,20,1588.97,Loyal Customers
+1420,5,25,3081.79,Champions / VIP
+1421,93,10,583.22,Potential Loyalists
+1422,43,13,1716.27,Loyal Customers
+1423,58,8,680.24,Potential Loyalists
+1424,42,19,1657.49,Loyal Customers
+1425,58,13,1939.89,Loyal Customers
+1426,80,4,813.22,Potential Loyalists
+1427,319,4,419.47,At Risk / Inactive
+1428,84,5,456.44,Potential Loyalists
+1429,344,2,222.75,At Risk / Inactive
+1430,349,3,358.14,At Risk / Inactive
+1431,29,13,1689.36,Loyal Customers
+1432,11,21,2509.81,Champions / VIP
+1433,333,1,254.28,At Risk / Inactive
+1434,16,19,2377.41,Loyal Customers
+1435,35,4,933.98,Potential Loyalists
+1436,94,11,724.87,Potential Loyalists
+1437,44,24,2100.43,Loyal Customers
+1438,62,12,1034.62,Potential Loyalists
+1439,19,11,1288.28,Loyal Customers
+1440,31,13,1177.05,Loyal Customers
+1441,49,16,1280.16,Loyal Customers
+1442,315,4,365.78,At Risk / Inactive
+1443,49,15,1236.87,Loyal Customers
+1444,10,33,3997.62,Champions / VIP
+1445,140,4,60.49,At Risk / Inactive
+1446,95,11,1029.56,Potential Loyalists
+1447,328,2,303.83,At Risk / Inactive
+1448,49,8,579.08,Potential Loyalists
+1449,84,6,900.83,Potential Loyalists
+1450,12,21,2420.18,Champions / VIP
+1451,47,10,1173.51,Loyal Customers
+1452,57,14,2315.85,Loyal Customers
+1453,3,27,4569.57,Champions / VIP
+1454,42,24,1938.08,Loyal Customers
+1455,24,16,2360.56,Loyal Customers
+1456,120,2,271.76,At Risk / Inactive
+1457,61,10,790.86,Potential Loyalists
+1458,304,4,445.35,At Risk / Inactive
+1459,54,16,1357.36,Loyal Customers
+1460,60,12,642.41,Potential Loyalists
+1461,38,11,2371.32,Loyal Customers
+1462,49,19,1721.83,Loyal Customers
+1463,59,9,913.48,Potential Loyalists
+1464,363,2,135.0,At Risk / Inactive
+1465,243,4,283.91,At Risk / Inactive
+1466,23,30,3503.19,Champions / VIP
+1467,223,2,439.96,At Risk / Inactive
+1468,273,3,203.05,At Risk / Inactive
+1469,26,11,1473.38,Loyal Customers
+1470,337,3,271.43,At Risk / Inactive
+1471,275,2,68.1,At Risk / Inactive
+1472,37,14,2367.64,Loyal Customers
+1473,25,19,1906.12,Loyal Customers
+1474,318,3,72.41,At Risk / Inactive
+1475,48,4,621.59,Potential Loyalists
+1476,17,21,1644.99,Loyal Customers
+1477,16,31,4873.7,Champions / VIP
+1478,91,7,750.15,Potential Loyalists
+1479,21,19,1563.35,Loyal Customers
+1480,25,46,2309.89,Champions / VIP
+1481,64,5,716.61,Potential Loyalists
+1482,35,17,2058.87,Loyal Customers
+1483,78,10,542.49,Potential Loyalists
+1484,9,34,4510.57,Champions / VIP
+1485,43,25,2381.99,Loyal Customers
+1486,20,14,1761.0,Loyal Customers
+1487,48,23,1129.26,Loyal Customers
+1488,70,12,875.73,Potential Loyalists
+1489,22,15,2278.25,Loyal Customers
+1490,37,19,1133.74,Loyal Customers
+1491,240,3,271.58,At Risk / Inactive
+1492,56,9,520.97,Potential Loyalists
+1493,80,7,634.58,Potential Loyalists
+1494,8,22,4646.7,Champions / VIP
+1495,32,19,2045.54,Loyal Customers
+1496,24,36,3814.89,Champions / VIP
+1497,168,3,169.42,At Risk / Inactive
+1498,22,12,1817.49,Loyal Customers
+1499,10,33,4205.53,Champions / VIP
+1500,75,11,1002.59,Potential Loyalists
+1501,11,23,3688.43,Champions / VIP
+1502,59,13,2040.88,Loyal Customers
+1503,32,21,1435.05,Loyal Customers
+1504,19,20,4645.26,Champions / VIP
+1505,20,25,4393.17,Champions / VIP
+1506,269,3,258.04,At Risk / Inactive
+1507,43,9,993.24,Potential Loyalists
+1508,31,10,1149.07,Loyal Customers
+1509,258,1,361.89,At Risk / Inactive
+1510,94,4,1049.2,Potential Loyalists
+1511,13,27,4287.3,Champions / VIP
+1512,33,4,737.34,Potential Loyalists
+1513,240,4,114.04,At Risk / Inactive
+1514,38,6,835.0,Potential Loyalists
+1515,3,34,2825.56,Champions / VIP
+1516,36,22,1004.66,Loyal Customers
+1517,106,6,809.59,Potential Loyalists
+1518,15,28,5146.89,Champions / VIP
+1519,55,22,1476.89,Loyal Customers
+1520,53,10,889.12,Potential Loyalists
+1521,243,2,235.71,At Risk / Inactive
+1522,23,26,3044.12,Champions / VIP
+1523,35,11,1250.22,Loyal Customers
+1524,289,1,259.44,At Risk / Inactive
+1525,19,21,2247.09,Loyal Customers
+1526,20,33,2737.36,Champions / VIP
+1527,27,13,1312.05,Loyal Customers
+1528,104,8,605.87,Potential Loyalists
+1529,49,14,1464.07,Loyal Customers
+1530,135,1,155.77,At Risk / Inactive
+1531,1,20,3455.79,Champions / VIP
+1532,47,7,420.36,Potential Loyalists
+1533,21,25,1206.47,Loyal Customers
+1534,161,4,141.9,At Risk / Inactive
+1535,52,6,930.69,Potential Loyalists
+1536,3,25,5444.21,Champions / VIP
+1537,32,14,2188.95,Loyal Customers
+1538,56,17,1699.62,Loyal Customers
+1539,81,5,909.62,Potential Loyalists
+1540,94,12,1034.24,Potential Loyalists
+1541,4,23,5482.6,Champions / VIP
+1542,30,4,477.6,Potential Loyalists
+1543,26,20,1109.4,Loyal Customers
+1544,15,44,5150.9,Champions / VIP
+1545,45,25,1060.41,Loyal Customers
+1546,48,12,2110.57,Loyal Customers
+1547,21,47,5488.21,Champions / VIP
+1548,62,10,854.18,Potential Loyalists
+1549,84,4,727.76,Potential Loyalists
+1550,25,25,4815.72,Champions / VIP
+1551,39,5,922.13,Potential Loyalists
+1552,55,19,2050.17,Loyal Customers
+1553,103,7,759.13,Potential Loyalists
+1554,18,24,1724.86,Loyal Customers
+1555,12,27,4626.81,Champions / VIP
+1556,285,3,52.71,At Risk / Inactive
+1557,91,7,834.55,Potential Loyalists
+1558,17,23,1783.42,Loyal Customers
+1559,32,18,1055.94,Loyal Customers
+1560,331,4,398.94,At Risk / Inactive
+1561,95,10,646.39,Potential Loyalists
+1562,57,7,544.86,Potential Loyalists
+1563,194,3,302.87,At Risk / Inactive
+1564,243,4,99.81,At Risk / Inactive
+1565,65,7,1076.26,Potential Loyalists
+1566,16,43,2383.61,Champions / VIP
+1567,292,2,383.32,At Risk / Inactive
+1568,49,11,1051.52,Potential Loyalists
+1569,184,4,419.37,At Risk / Inactive
+1570,58,4,487.66,Potential Loyalists
+1571,36,9,794.68,Potential Loyalists
+1572,45,12,929.05,Potential Loyalists
+1573,239,4,196.94,At Risk / Inactive
+1574,164,4,163.28,At Risk / Inactive
+1575,60,4,1017.45,Potential Loyalists
+1576,27,25,1831.04,Loyal Customers
+1577,351,2,283.24,At Risk / Inactive
+1578,19,35,2819.56,Champions / VIP
+1579,106,7,571.13,Potential Loyalists
+1580,47,15,1566.6,Loyal Customers
+1581,27,23,2086.08,Loyal Customers
+1582,359,2,150.4,At Risk / Inactive
+1583,34,12,1039.59,Potential Loyalists
+1584,35,18,1487.49,Loyal Customers
+1585,21,28,4082.68,Champions / VIP
+1586,15,20,1608.28,Loyal Customers
+1587,26,10,1216.22,Loyal Customers
+1588,15,39,3166.74,Champions / VIP
+1589,48,12,1020.38,Loyal Customers
+1590,100,4,541.28,Potential Loyalists
+1591,55,24,1982.73,Loyal Customers
+1592,45,9,950.47,Potential Loyalists
+1593,42,22,1697.68,Loyal Customers
+1594,71,9,740.74,Potential Loyalists
+1595,23,12,2053.09,Loyal Customers
+1596,47,20,1480.97,Loyal Customers
+1597,43,17,1300.5,Loyal Customers
+1598,22,23,1295.99,Loyal Customers
+1599,12,38,2553.07,Champions / VIP
+1600,30,6,561.85,Potential Loyalists

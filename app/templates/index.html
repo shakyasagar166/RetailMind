@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetailMind | AI Retail Intelligence, Sales Forecasting & RFM Segmentation</title>
+    <meta name="description" content="AI and Machine Learning powered retail intelligence engine for sales forecasting, inventory restock planning, and customer RFM segmentation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="/" class="brand-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                        <path d="M3 6h18"/>
+                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">RetailMind<span class="accent-text">-AI</span></span>
+                    <span class="brand-tagline">Retail Intelligence Engine</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#forecast-sec" class="nav-link">Sales Forecaster</a>
+                <a href="#segment-sec" class="nav-link">RFM Segmentation</a>
+                <a href="#courses" class="nav-link">Upskill Courses</a>
+                <!-- Prominent ML Courses Hub -->
+                <div class="nav-dropdown">
+                    <button class="nav-btn courses-badge" id="coursesDropdownBtn" aria-expanded="false">
+                        <svg class="course-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        <span>Learn ML Courses</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="https://uncodemy.com/course/machine-learning-training-course-in-delhi" target="_blank" rel="noopener noreferrer" class="dropdown-item">
+                            <div class="item-title">ML Course in Delhi</div>
+                            <div class="item-desc">Comprehensive offline & online training by Uncodemy</div>
+                        </a>
+                        <a href="https://uncodemy.com/course/machine-learning-training-course-in-noida" target="_blank" rel="noopener noreferrer" class="dropdown-item">
+                            <div class="item-title">ML Course in Noida</div>
+                            <div class="item-desc">Industry-ready machine learning training in Noida</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span>Random Forest Regressor (98.9% R²) • K-Means RFM Cohorts</span>
+            </div>
+            <h1 class="hero-title">Predictive Sales & Customer Intelligence</h1>
+            <p class="hero-subtitle">
+                Harness Machine Learning to predict weekly merchandise demand, estimate gross revenue, plan safety stock, and personalize retention campaigns using RFM customer segmentation.
+            </p>
+
+            <!-- Operational Scenario Chips -->
+            <div class="scenarios-container">
+                <span class="scenarios-label">Quick Scenario Presets:</span>
+                <div class="scenarios-chips">
+                    {% for key, sc in scenarios.items() %}
+                    <button type="button" class="scenario-btn" data-scenario="{{ key }}">{{ sc.title }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Section 1: Sales Demand Forecaster -->
+        <section class="tool-section" id="forecast-sec">
+            <div class="section-heading">
+                <h2>📈 Merchandise Demand & Revenue Forecaster</h2>
+                <p>Simulate pricing, discounts, advertising budget, footfall, and seasonal surges to forecast sales.</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Parameters Card -->
+                <div class="card form-card">
+                    <form id="forecastForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Product Department</label>
+                                <select id="category" name="category" class="input-field">
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Apparel">Apparel</option>
+                                    <option value="Home & Kitchen">Home & Kitchen</option>
+                                    <option value="Groceries">Groceries</option>
+                                    <option value="Beauty & Health">Beauty & Health</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="storeId">Store Location ID</label>
+                                <select id="storeId" name="store_id" class="input-field">
+                                    <option value="1">Store #1 (Metropolitan Flagship)</option>
+                                    <option value="2">Store #2 (Suburban Mall)</option>
+                                    <option value="3">Store #3 (Downtown Express)</option>
+                                    <option value="5">Store #5 (Commercial Hub)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="price">Unit Price ($)</label>
+                                <input type="number" id="price" name="price" value="120.00" step="0.5" class="input-field" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="discount">Markdown / Discount (%)</label>
+                                <select id="discount" name="discount" class="input-field">
+                                    <option value="0.0">0% (Full Price)</option>
+                                    <option value="0.05">5% Discount</option>
+                                    <option value="0.10">10% Discount</option>
+                                    <option value="0.15">15% Discount</option>
+                                    <option value="0.20">20% Flash Sale</option>
+                                    <option value="0.30">30% Clearance</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="footfall">Projected Customer Footfall</label>
+                                <input type="number" id="footfall" name="customer_footfall" value="1600" step="50" class="input-field" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="adSpend">Marketing Spend ($)</label>
+                                <input type="number" id="adSpend" name="advertising_spend" value="800.0" step="50" class="input-field" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row toggles-row">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="isHoliday" name="is_holiday">
+                                    <span>Holiday Surge Week</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="isWeekend" name="is_weekend" checked>
+                                    <span>Weekend High Traffic</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="forecastBtn" class="btn btn-primary btn-block">
+                            <span class="btn-text">Compute ML Demand Forecast</span>
+                            <span class="loader-spinner" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Forecast Output Card -->
+                <div class="card output-card" id="forecastOutputCard">
+                    <div class="output-header">
+                        <h3>Forecast Projection Summary</h3>
+                        <span class="status-badge" id="demandBadge">Ready</span>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-box">
+                            <span class="kpi-label">Forecasted Sales</span>
+                            <span class="kpi-value" id="kpiUnits">--</span>
+                            <span class="kpi-sub">Weekly Units</span>
+                        </div>
+                        <div class="kpi-box">
+                            <span class="kpi-label">Projected Gross Revenue</span>
+                            <span class="kpi-value highlight" id="kpiRevenue">--</span>
+                            <span class="kpi-sub" id="kpiEffectivePrice">Effective Price: $0.00</span>
+                        </div>
+                        <div class="kpi-box">
+                            <span class="kpi-label">Safety Stock Target</span>
+                            <span class="kpi-value" id="kpiSafetyStock">--</span>
+                            <span class="kpi-sub">Buffer for volatility</span>
+                        </div>
+                        <div class="kpi-box">
+                            <span class="kpi-label">Suggested Reorder Point</span>
+                            <span class="kpi-value" id="kpiReorderPoint">--</span>
+                            <span class="kpi-sub">Inventory trigger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Section 2: RFM Customer Segmentation -->
+        <section class="tool-section" id="segment-sec">
+            <div class="section-heading">
+                <h2>🎯 Customer RFM Behavioral Segmentation</h2>
+                <p>Segment shoppers into actionable cohorts using Recency, Frequency, and Monetary parameters.</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- RFM Input Form -->
+                <div class="card form-card">
+                    <form id="rfmForm">
+                        <div class="form-group">
+                            <label for="rfmRecency">Recency (Days since last purchase)</label>
+                            <input type="number" id="rfmRecency" name="recency" value="18" min="1" max="365" class="input-field" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rfmFrequency">Frequency (Total purchase transactions)</label>
+                            <input type="number" id="rfmFrequency" name="frequency" value="22" min="1" max="100" class="input-field" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rfmMonetary">Monetary (Cumulative 12-Month spend in $)</label>
+                            <input type="number" id="rfmMonetary" name="monetary" value="3250.0" step="10" class="input-field" required>
+                        </div>
+
+                        <button type="submit" id="rfmBtn" class="btn btn-secondary-brand btn-block">
+                            <span class="btn-text">Classify Customer Cohort</span>
+                            <span class="loader-spinner" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- RFM Output Card -->
+                <div class="card output-card" id="rfmOutputCard">
+                    <div class="output-header">
+                        <h3>Customer Profile Segment</h3>
+                        <span class="segment-badge" id="segmentBadge">VIP Champions</span>
+                    </div>
+
+                    <div class="rfm-insights-box">
+                        <div class="insight-item">
+                            <span class="insight-label">Recommended Marketing Strategy:</span>
+                            <p class="insight-text" id="strategyText">Reward loyalty with exclusive early-access perks, concierge support, and premium invitations.</p>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-label">Optimal Promotional Offer:</span>
+                            <p class="insight-text highlight-offer" id="offerText">Complimentary VIP gift & double reward loyalty points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upskilling Spotlight Section / Uncodemy Courses -->
+        <section class="courses-section" id="courses">
+            <div class="section-badge">Master AI, Retail Analytics & Machine Learning</div>
+            <h2 class="section-title">Advance Your Data Science & ML Career with Uncodemy</h2>
+            <p class="section-subtitle">
+                Want to build production-grade forecasting pipelines, customer segmentation algorithms, and business intelligence models like RetailMind? Learn directly with premier industry programs from Uncodemy:
+            </p>
+
+            <div class="courses-grid">
+                <!-- Course Card 1: Delhi -->
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="location-badge">📍 Delhi / NCR & Online</span>
+                        <span class="rating-badge">★ 4.9 (1.2k+ Reviews)</span>
+                    </div>
+                    <h3 class="course-title">Machine Learning Training Course in Delhi</h3>
+                    <p class="course-summary">
+                        Master Supervised & Unsupervised Learning, Random Forest forecasting, customer clustering, neural architectures, and model deployment on AWS with 100% placement support.
+                    </p>
+                    <ul class="course-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Hands-on projects: Retail Analytics, Sales Forecasting, NLP
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Live mentorship by senior enterprise Data Scientists
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Interview preparation & dedicated career assistance
+                        </li>
+                    </ul>
+                    <a href="https://uncodemy.com/course/machine-learning-training-course-in-delhi" target="_blank" rel="noopener noreferrer" class="btn btn-course">
+                        <span>Explore Machine Learning Course in Delhi</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- Course Card 2: Noida -->
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="location-badge">📍 Noida Center & Online</span>
+                        <span class="rating-badge">★ 4.9 (980+ Reviews)</span>
+                    </div>
+                    <h3 class="course-title">Machine Learning Training Course in Noida</h3>
+                    <p class="course-summary">
+                        Gain comprehensive practical expertise in Scikit-Learn, Pandas, feature engineering, regression pipelines, K-Means clustering, and Flask REST API productionizing.
+                    </p>
+                    <ul class="course-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            End-to-end model development lifecycle & Flask APIs
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Real-world business case studies & retail datasets
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Recognized industry certification and placement guarantee
+                        </li>
+                    </ul>
+                    <a href="https://uncodemy.com/course/machine-learning-training-course-in-noida" target="_blank" rel="noopener noreferrer" class="btn btn-course">
+                        <span>Explore Machine Learning Course in Noida</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section class="pipeline-section">
+            <h2 class="section-title">RetailMind Machine Learning Architecture</h2>
+            <div class="pipeline-cards">
+                <div class="pipe-step">
+                    <div class="pipe-num">01</div>
+                    <h4>Feature Pipelines</h4>
+                    <p>ColumnTransformer handling one-hot encoding for merchandise categories and standard scaling for pricing and footfall.</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">02</div>
+                    <h4>Ensemble Regression</h4>
+                    <p>RandomForest ensemble learning with 120 decision trees capturing non-linear promotional and holiday demand dynamics.</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">03</div>
+                    <h4>RFM Clustering</h4>
+                    <p>Standardized K-Means clustering isolating behavioral customer segments across purchase frequency and monetary velocity.</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">04</div>
+                    <h4>Decision Intelligence</h4>
+                    <p>Converts ML predictions into automated inventory safety stock calculations and customized promotional actions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="brand-logo">
+                    <div class="logo-icon sm">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                        </svg>
+                    </div>
+                    <span class="brand-name">RetailMind</span>
+                </div>
+                <p class="footer-desc">AI-powered Retail Intelligence, Demand Forecasting, and Customer Segmentation platform.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="#forecast-sec">Sales Forecaster</a></li>
+                    <li><a href="#segment-sec">RFM Segmentation</a></li>
+                    <li><a href="#courses">Training Courses</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Featured Training Programs</h4>
+                <ul class="footer-nav">
+                    <li>
+                        <a href="https://uncodemy.com/course/machine-learning-training-course-in-delhi" target="_blank" rel="noopener noreferrer">
+                            Machine Learning Training Course in Delhi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://uncodemy.com/course/machine-learning-training-course-in-noida" target="_blank" rel="noopener noreferrer">
+                            Machine Learning Training Course in Noida
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 RetailMind. Production Machine Learning for Commercial Retail.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.RETAIL_SCENARIOS = {{ scenarios | tojson | safe }};
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
